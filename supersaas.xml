@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.4" type="plugin" group="content" method="upgrade">
+<extension version="4.0" type="plugin" group="content" method="upgrade">
 	<name>PLG_CONTENT_SS</name>
 	<author>SuperSaaS</author>
-	<creationDate>May 2015</creationDate>
-	<copyright>Copyright (C) 2021 SuperSaaS. All rights reserved.</copyright>
+	<creationDate>January 2026</creationDate>
+	<copyright>Copyright (C) 2026 SuperSaaS. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>info@supersaas.com</authorEmail>
 	<authorUrl>www.supersaas.com</authorUrl>
-	<version>2.2</version>
+	<version>2.3</version>
 	<description>PLG_CONTENT_SS_DESCRIPTION</description>
 	<files>
 		<filename plugin="supersaas">supersaas.php</filename>
@@ -17,30 +17,32 @@
 		<fields name="params">
 			<fieldset name="settings" label="SuperSaaS Plugin Settings">
 				<field
-					name="account_name"
-					type="text"
-					label="PLG_CONTENT_SS_ACCOUNT_NAME"
-					description="PLG_CONTENT_SS_ACCOUNT_NAME_DESCRIPTION"
-					required="true"
+						name="account_name"
+						type="text"
+						label="PLG_CONTENT_SS_ACCOUNT_NAME"
+						description="PLG_CONTENT_SS_ACCOUNT_NAME_DESCRIPTION"
+						required="true"
 				/>
 				<field
-					name="password"
-					type="text"
-					label="PLG_CONTENT_SS_API_KEY"
-					description="PLG_CONTENT_SS_API_KEY_DESCRIPTION"
-					required="true"
+						name="password"
+						type="text"
+						label="PLG_CONTENT_SS_API_KEY"
+						description="PLG_CONTENT_SS_API_KEY_DESCRIPTION"
+						required="true"
 				/>
 				<field
-					name="custom_domain"
-					type="text"
-					label="PLG_CONTENT_SS_CUSTOM_DOMAIN"
-					description="PLG_CONTENT_SS_CUSTOM_DOMAIN_DESCRIPTION"
+						name="custom_domain"
+						type="url"
+						label="PLG_CONTENT_SS_CUSTOM_DOMAIN"
+						description="PLG_CONTENT_SS_CUSTOM_DOMAIN_DESCRIPTION"
+						validate="url"
+						filter="url"
 				/>
 				<field
-					name="schedule"
-					type="text"
-					label="PLG_CONTENT_SS_SCHEDULE"
-					description="PLG_CONTENT_SS_SCHEDULE"
+						name="schedule"
+						type="text"
+						label="PLG_CONTENT_SS_SCHEDULE"
+						description="PLG_CONTENT_SS_SCHEDULE_DESCRIPTION"
 				/>
 			</fieldset>
 		</fields>
